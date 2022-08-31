@@ -1,6 +1,6 @@
 # Project SetUp
 
-- Run git clone <https://github.com/Roxie-32/patchstack.git>.
+- Run `git clone https://github.com/Roxie-32/patchstack.git`.
 
 - Move into your project directory by running `cd patchstack`
 
