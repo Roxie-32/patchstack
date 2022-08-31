@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('vulnerabilities', function (Blueprint $table) {
             $table->id();
+            $table->string('uuid');
+            $table->string('title');
+            $table->longText('description');
             $table->timestamps();
         });
     }
