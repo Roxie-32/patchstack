@@ -30,4 +30,4 @@ I acknowledge that this codebase could be improved. I also included some nice-to
 
 ## Documentation
 
-All endpoints have been documented in [OpenApi(Swagger)](https://app.swaggerhub.com/apis-docs/FIZZYFLEXY397/PetShop/1.0) to see how requests can be made and how a sample response looks like.
+All endpoints have been documented in [Postman](https://documenter.getpostman.com/view/12913860/VUxNSUAB) to see how requests can be made and how a sample response looks like.
