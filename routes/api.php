@@ -26,6 +26,7 @@ Route::group(
         Route::group(["prefix" => "vulnerabilites"], function () {
             Route::get('/', Vulnerability\ListVulnerabilitiesHandler::class);
             Route::get('/{uuid}', Vulnerability\FetchVulnerabilityHandler::class);
+            Route::put('/{uuid}', Vulnerability\EditVulnerabilityHandler::class);
             Route::delete('/{uuid}', Vulnerability\DeleteVulnerabilityHandler::class);
             Route::post('/create', Vulnerability\CreateVulnerabilityHandler::class);
 
