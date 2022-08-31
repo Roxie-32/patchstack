@@ -25,7 +25,8 @@ Route::group(
 
         Route::group(["prefix" => "vulnerabilites"], function () {
             Route::get('/', Vulnerability\ListVulnerabilitiesHandler::class);
-          
+            Route::get('/{uuid}', Vulnerability\FetchVulnerabilityHandler::class);
+
         });
     }
 );
