@@ -55,5 +55,7 @@ class Handler extends ExceptionHandler
                 'data'   =>  'Resource Not Found'
             ], 404);
         });
+
+        
     }
 }

@@ -22,14 +22,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::group(
     ["prefix" => "v1"], function () {
-
-        Route::group(["prefix" => "vulnerabilites"], function () {
-            Route::get('/', Vulnerability\ListVulnerabilitiesHandler::class);
-            Route::get('/{uuid}', Vulnerability\FetchVulnerabilityHandler::class);
-            Route::put('/{uuid}', Vulnerability\EditVulnerabilityHandler::class);
-            Route::delete('/{uuid}', Vulnerability\DeleteVulnerabilityHandler::class);
-            Route::post('/create', Vulnerability\CreateVulnerabilityHandler::class);
-
-        });
-    }
+    Route::group(["prefix" => "vulnerabilities"], function () {
+        Route::get('/', Vulnerability\ListVulnerabilitiesHandler::class);
+        Route::get('/{uuid}', Vulnerability\FetchVulnerabilityHandler::class);
+        Route::put('/{uuid}', Vulnerability\EditVulnerabilityHandler::class);
+        Route::delete('/{uuid}', Vulnerability\DeleteVulnerabilityHandler::class);
+        Route::post('/create', Vulnerability\CreateVulnerabilityHandler::class);
+    });
+}
 );
